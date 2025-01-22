@@ -2,11 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp4.NewPage1"
-             Title="NewPage1">
+             Title="Konfiguracja">
     <VerticalStackLayout>
         <Label 
-            Text="druga"
-            x:Name="lblNapis"
+            Text="Wybierz waluty"
+            HorizontalOptions="Center"
+            FontSize="40"
+            />
+        <HorizontalStackLayout Spacing="5">
+            <CheckBox x:Name="chkUSD" />
+            <Label Text="USD, dolar amerykański" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <CheckBox x:Name="chkEUR" />
+            <Label Text="EUR, Euro" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <CheckBox x:Name="chkGBP" />
+            <Label Text="GBP, funt brytyjski" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <CheckBox x:Name="chkCHF" />
+            <Label Text="CHF, franek szwajcarski" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <CheckBox x:Name="chkDKK" />
+            <Label Text="DKK, korona duńska" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+        <Button
+            Text="Zatwierdź"
+            Clicked="btnZatwierdz"
             />
     </VerticalStackLayout>
 </ContentPage>
